@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 
 private let Segue = "ShowDetail"
 
@@ -62,9 +63,6 @@ class NewsTableViewController: UITableViewController {
 
         return cell
     }
-
-
-
     
     // MARK: - Navigation
 
