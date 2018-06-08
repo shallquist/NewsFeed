@@ -45,6 +45,11 @@ class NewsTableViewController: UITableViewController {
                 self.tableView.reloadData()
             }
             else {
+                let alertVC = UIAlertController(title: nil, message: error?.localizedDescription, preferredStyle: UIAlertControllerStyle.alert)
+                alertVC.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.cancel, handler: nil))
+                
+                self.present(alertVC, animated: true, completion: nil)
+
                 print(error)
             }
         }
